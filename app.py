@@ -5,7 +5,8 @@ import json
 import os
 
 # Set page configuration
-st.set_page_config(page_title="FreshBasket Delay Predictor", page_icon="🚚", layout="wide")
+st.set_page_config(page_title="🚛 FreshBasket Truck Delay Prediction Dashboard — v2", page_icon="🚛", layout="wide")
+# st.title("🚛 FreshBasket Truck Delay Prediction Dashboard — v2")  # Add the "— v2"
 
 # ==========================================
 # 1. Load Artifacts (Cached for performance)
@@ -36,7 +37,7 @@ BINARY_ORDINAL_COLS = metadata['binary_ordinal_cols']
 # ==========================================
 # 2. Application Header
 # ==========================================
-st.title("🚚 FreshBasket Delivery Delay Predictor")
+st.title("🚚 FreshBasket Delivery Delay Predictor Dashboard")
 st.markdown("""
 Enter the trip, driver, and weather details below to predict if the shipment is at risk of being delayed.
 """)
